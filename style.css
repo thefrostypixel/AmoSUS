@@ -1,0 +1,53 @@
+#hud {
+    position: fixed;
+}
+#hud-settings-button {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+}
+#hud-actions {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+    width: 100vw;
+}
+#hud-actions > button {
+    background: #000D;
+    border: none;
+    border-radius: 15px;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+#hud-actions > button > svg {
+    color: var(--color);
+    fill: var(--color);
+    /*filter: drop-shadow(0 0 3px var(--color));*/
+}
+#hud-actions > button > a {
+    color: var(--color);
+    position: absolute;
+    left: 50%;
+    top: calc(100% - 12px);
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow:
+        -2px -2px 0 #000D,
+        -2px 0 0 #000D,
+        -2px 2px 0 #000D,
+        0 -2px 0 #000D,
+        0 2px 0 #000D,
+        2px -2px 0 #000D,
+        2px 0 0 #000D,
+        2px 2px 0 #000D;
+}
